@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1006946927298-frvpd1kr7qb3427cnnid70c0mpkc4hdm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1006946927298-frvpd1kr7qb3427cnnid70c0mpkc4hdm</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAxXpzz40GxNifB9dEWqFjuTXf68EXVdv8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1006946927298</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ter.Anonymous</string>
+	<key>PROJECT_ID</key>
+	<string>anonymous-36518</string>
+	<key>STORAGE_BUCKET</key>
+	<string>anonymous-36518.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1006946927298:ios:0e02c49a8bfbe1c0</string>
+	<key>DATABASE_URL</key>
+	<string>https://anonymous-36518.firebaseio.com</string>
+</dict>
+</plist>
