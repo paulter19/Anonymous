@@ -10,6 +10,7 @@ target 'Anonymous' do
 pod 'Firebase/Core'
 pod 'Firebase/Database'
 pod 'Firebase/Auth'
+pod 'Google-Mobile-Ads-SDK'
 
 
   target 'AnonymousTests' do

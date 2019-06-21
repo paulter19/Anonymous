@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anonymous" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EAw-3p-YGR">
-                                <rect key="frame" x="94" y="66" width="226" height="53"/>
+                                <rect key="frame" x="94" y="66" width="226" height="52"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="44"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyA-hE-Gjb">
-                                <rect key="frame" x="20" y="116" width="120" height="30"/>
+                                <rect key="frame" x="20" y="116" width="120" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="UNY-vO-UMN"/>
@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ysm-Of-UDV">
-                                <rect key="frame" x="147" y="116" width="120" height="30"/>
+                                <rect key="frame" x="147" y="115.5" width="120" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Sent Messages">
@@ -52,7 +52,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aG-vM-E2S">
-                                <rect key="frame" x="274" y="116" width="120" height="30"/>
+                                <rect key="frame" x="274" y="115.5" width="120" height="30"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Search Users">
@@ -64,7 +64,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qxL-yL-toy">
-                                <rect key="frame" x="12" y="154" width="390" height="724"/>
+                                <rect key="frame" x="12" y="153" width="390" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="156" id="tEv-BD-KmX" customClass="MessageTableViewCell" customModule="Anonymous" customModuleProvider="target">
@@ -84,7 +84,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hey i think that we should be friends! We never really got a chance to know each other" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dy9-H9-pvH">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="No Messages Give Your Friends Your Username!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dy9-H9-pvH">
                                                     <rect key="frame" x="20" y="29" width="374" height="74"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -93,7 +93,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZY-dr-Wsv">
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZY-dr-Wsv">
                                                     <rect key="frame" x="26" y="115" width="34" height="30"/>
                                                     <state key="normal" title="reply"/>
                                                     <connections>
@@ -124,6 +124,16 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="KCF-7F-5hx"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDb-s1-mBM">
+                                <rect key="frame" x="21" y="77" width="47" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressLogout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U6X-Vt-4uq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.35851117695569978" blue="0.30741809575614354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -133,6 +143,7 @@
                             <constraint firstAttribute="bottomMargin" secondItem="qxL-yL-toy" secondAttribute="bottom" constant="-16" id="DG4-kP-9HM"/>
                             <constraint firstItem="qxL-yL-toy" firstAttribute="top" secondItem="EAw-3p-YGR" secondAttribute="bottom" constant="35" id="Imp-vK-I3y"/>
                             <constraint firstItem="EAw-3p-YGR" firstAttribute="centerX" secondItem="Ysm-Of-UDV" secondAttribute="centerX" id="JaC-ZV-iT2"/>
+                            <constraint firstItem="lyA-hE-Gjb" firstAttribute="top" secondItem="MDb-s1-mBM" secondAttribute="bottom" constant="9" id="OdJ-Ce-dqC"/>
                             <constraint firstItem="lyA-hE-Gjb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P4B-41-sgq"/>
                             <constraint firstItem="3aG-vM-E2S" firstAttribute="leading" secondItem="Ysm-Of-UDV" secondAttribute="trailing" constant="7" id="Pfc-ck-Wdy"/>
                             <constraint firstItem="EAw-3p-YGR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="UE9-k4-eVn"/>
@@ -140,6 +151,8 @@
                             <constraint firstItem="Ysm-Of-UDV" firstAttribute="leading" secondItem="lyA-hE-Gjb" secondAttribute="trailing" constant="7" id="cBK-4d-uKS"/>
                             <constraint firstItem="Ysm-Of-UDV" firstAttribute="baseline" secondItem="3aG-vM-E2S" secondAttribute="baseline" id="chA-1b-I1D"/>
                             <constraint firstItem="EAw-3p-YGR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="ggB-Eq-i2O"/>
+                            <constraint firstItem="MDb-s1-mBM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="hyd-Fa-uo6"/>
+                            <constraint firstItem="MDb-s1-mBM" firstAttribute="centerY" secondItem="EAw-3p-YGR" secondAttribute="centerY" id="kEb-hE-XJr"/>
                             <constraint firstItem="3aG-vM-E2S" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="wDu-jh-P0E"/>
                             <constraint firstItem="lyA-hE-Gjb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="72" id="yXX-ba-24d"/>
                             <constraint firstItem="Ysm-Of-UDV" firstAttribute="centerX" secondItem="qxL-yL-toy" secondAttribute="centerX" id="yeD-tI-Xex"/>
@@ -274,7 +287,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wd-tL-gdv">
-                                <rect key="frame" x="174" y="449" width="68" height="15"/>
+                                <rect key="frame" x="20" y="53" width="68" height="15"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Sign Up">
@@ -446,7 +459,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSl-oA-KyK">
-                                <rect key="frame" x="181" y="407" width="68" height="34"/>
+                                <rect key="frame" x="181" y="478" width="68" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Sign Up">
@@ -464,7 +477,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XSe-po-fJ6">
-                                <rect key="frame" x="181" y="476" width="68" height="34"/>
+                                <rect key="frame" x="18" y="44" width="68" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="Sign In">
@@ -472,7 +485,7 @@
                                 </state>
                                 <connections>
                                     <action selector="signInPressed:" destination="1IM-59-3Dd" eventType="touchUpInside" id="AKB-r6-LQM"/>
-                                    <segue destination="1IM-59-3Dd" kind="presentation" id="1QE-wc-B9O"/>
+                                    <segue destination="1IM-59-3Dd" kind="presentation" id="Fvw-J1-7mx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -557,7 +570,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hey i think that we should be friends! We never really got a chance to know each other" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGl-md-ahU">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="No Messages Give Your Friends Your Username!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGl-md-ahU">
                                                     <rect key="frame" x="20" y="29" width="374" height="74"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
@@ -566,7 +579,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQ7-Sc-URu">
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OQ7-Sc-URu">
                                                     <rect key="frame" x="26" y="115" width="34" height="30"/>
                                                     <state key="normal" title="reply"/>
                                                 </button>
@@ -626,8 +639,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6Dc-58-ckA"/>
-        <segue reference="ujF-IJ-DAZ"/>
+        <segue reference="IjL-DH-GOa"/>
+        <segue reference="yFR-3M-SaO"/>
         <segue reference="j0y-f9-HKo"/>
     </inferredMetricsTieBreakers>
 </document>

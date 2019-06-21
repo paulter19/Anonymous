@@ -9,9 +9,10 @@
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
+import GoogleMobileAds
 
 
-class SendMessageViewController: UIViewController {
+class SendMessageViewController: UIViewController,GADBannerViewDelegate {
 
     var username:String?
     var uid:String = "I01xvMZqQMboRPIpZeHGniUNnyT2"
@@ -21,6 +22,14 @@ class SendMessageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.messageText.becomeFirstResponder()
+        let view = GADBannerView()
+        view.frame = CGRect(x: 0, y: self.view.frame.maxY - 50, width: 320, height: 50)
+        view.delegate = self
+        view.rootViewController = self
+        view.adUnitID = "ca-app-pub-1666211014421581/5861230063"
+        view.load(GADRequest())
+        self.view.addSubview(view)
+
         
     }
     

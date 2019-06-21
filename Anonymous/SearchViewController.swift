@@ -8,7 +8,9 @@
 
 import UIKit
 import FirebaseDatabase
-class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate {
+import GoogleMobileAds
+
+class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate,GADBannerViewDelegate {
     
     @IBOutlet weak var mySearchBar: UISearchBar!
     
@@ -71,6 +73,14 @@ class SearchViewController: UIViewController,UITableViewDataSource,UITableViewDe
         // Do any additional setup after loading the view.
         self.myTableView.clipsToBounds = true
         self.myTableView.layer.cornerRadius = 10
+        let view = GADBannerView()
+        view.frame = CGRect(x: 0, y: self.view.frame.maxY - 50, width: 320, height: 50)
+        view.delegate = self
+        view.rootViewController = self
+        view.adUnitID = "ca-app-pub-1666211014421581/5861230063"
+        view.load(GADRequest())
+        self.view.addSubview(view)
+
     }
     
 
